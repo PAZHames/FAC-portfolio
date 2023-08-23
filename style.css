@@ -1,6 +1,8 @@
 :root {
     --color-1:#566C2F;
-    --color-2:#759DBA;
+    --color-2:#0A648B;
+    --color-3: #C15213;
+
 
     --default-transition: 250ms all ease-in-out;
 
@@ -20,34 +22,69 @@
     opacity: 70%;
 }
 
-.parallax {
-     /* The image used */
-  background-color: var(--color-1);
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .flex-col {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+.side {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 100;
+}
+
+.left {
+    width: 50px; /* Adjust the width as needed */
+    background-color: var(--color-1);
+    left: 0;
+}
+
+.right {
+    width: 10%; 
+    background-color: var(--color-2);
+    right: 0;
+}
+
+.side .flex-col {
+    margin-top: 20px;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    transition: var(--default-transition);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+
 body,html {
-    height: 100%;
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-1);
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
 }
 
 .headings {
-    padding-left: 300px;
-    padding-top: 300px;
+    flex: 1;
+    padding-left: 300px; /* Adjust the padding as needed */
+    padding-top: 300px; /* Adjust the padding as needed */
 }
 
 .main-header {
@@ -65,10 +102,6 @@ body,html {
     font-size: 32px;
     margin-bottom: 10px;
     font-weight: normal;
-}
-
-.social-links-container {
-    padding-left: 50px;
 }
 
 .contact-link {
