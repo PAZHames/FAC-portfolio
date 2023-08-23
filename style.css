@@ -1,5 +1,9 @@
 :root {
-    ---color-1:#566C2F;
+    --color-1:#566C2F;
+    --color-2:#759DBA;
+
+    --default-transition: 250ms all ease-in-out;
+
 }
 
 /* Utility Classes */
@@ -18,7 +22,7 @@
 
 .parallax {
      /* The image used */
-  background-color: var(---color-1);
+  background-color: var(--color-1);
 
   /* Full height */
   height: 100%;
@@ -33,6 +37,7 @@
 .flex-col {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 body,html {
@@ -61,3 +66,28 @@ body,html {
     margin-bottom: 10px;
     font-weight: normal;
 }
+
+.social-links-container {
+    padding-left: 50px;
+}
+
+.contact-link {
+    text-decoration: none;
+    /* to make hover circular */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+.contact-link:hover {
+    background-color: var(--color-2);
+    border-radius: 50%;
+    transition: var(--default-transition);
+    /* font-weight: bold; */
+
+}
+
+
+
