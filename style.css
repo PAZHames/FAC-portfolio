@@ -1,5 +1,5 @@
 :root {
-    --color-1:#566C2F;
+    --color-1:#566c2f;
     --color-2:#0A648B;
     --color-3: #C15213;
 
@@ -37,6 +37,7 @@
     align-items: center;
     justify-content: flex-start;
     z-index: 100;
+    padding-top: 50px;
 }
 
 .left {
@@ -49,19 +50,20 @@
     width: 10%; 
     background-color: var(--color-2);
     right: 0;
+    border-left: solid white;
 }
+
 
 .side .flex-col {
     margin-top: 20px;
 }
-
 
 .nav-link {
     text-decoration: none;
     color: white;
     font-size: 18px;
     margin: 10px 0;
-    padding: 5px 10px;
+    padding: 10px 10px;
     transition: var(--default-transition);
 }
 
@@ -104,6 +106,10 @@ body,html {
     font-weight: normal;
 }
 
+.contact-icon {
+    font-size: 18px;
+}
+
 .contact-link {
     text-decoration: none;
     /* to make hover circular */
@@ -115,7 +121,7 @@ body,html {
 }
 
 .contact-link:hover {
-    background-color: var(--color-2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     transition: var(--default-transition);
     /* font-weight: bold; */
