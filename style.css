@@ -1,0 +1,58 @@
+:root {
+    ---color-1:#566C2F;
+}
+
+/* Utility Classes */
+
+.light {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.fade {
+    opacity: 70%;
+}
+
+.parallax {
+     /* The image used */
+  background-color: var(---color-1);
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body,html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.headings {
+    padding-left: 300px;
+    padding-top: 300px;
+}
+
+.main-header {
+    font-size: 96px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.role-header {
+    font-size: 64px;
+    margin-top: 20px;
+}
+
+.greeting {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
