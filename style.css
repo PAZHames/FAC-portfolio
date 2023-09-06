@@ -2,6 +2,7 @@
     --color-1:#566c2f;
     --color-2:#0A648B;
     --color-3: #C15213;
+    --color-4: #FC6F1B;
 
 
     --default-transition: 250ms all ease-in-out;
@@ -47,7 +48,7 @@
 }
 
 .left {
-    width: 50px; /* Adjust the width as needed */
+    width: 50px; 
     background-color: var(--color-1);
     left: 0;
 }
@@ -55,13 +56,14 @@
 .right {
     width: 20%; 
     right: 0;
-    border-left: solid white;
+    border-left: solid orange;
 }
 
 
 .side .flex-col {
     margin-top: 20px;
 }
+
 
 .nav-link {
     text-decoration: none;
@@ -93,11 +95,44 @@
     margin: 0 auto;
   }
 
+  .dark-button {
+    color: var(--secondary-color);
+    font-weight: bold;
+   
+  }
+
+  .dark-button:after, .dark-button:before {
+    content: "";
+    background-color: var(--secondary-color);
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease;
+    transform: scale(0.85);
+    display: block;
+    margin: 0 auto;
+  }
+
+    .dark-button:hover:before {
+      top: 0;
+      transform: scale(1);
+    }
+    .dark-button:hover:after {
+      transform: scale(1);
+    }
+
 
 body,html {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--color-1);
     
+}
+
+.colored-hr {
+    color: orange;
 }
 
 .wrapper {
@@ -157,11 +192,15 @@ body,html {
 /* cards */
 
 
-.card-container {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
+.horizontal-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
+.horizontal-card {
+    flex: 1;
+}
   
   .card {
     background-color: #ffffff;
@@ -171,24 +210,25 @@ body,html {
     /* flex: 1; */
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 20px;
-
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
     
   }
 
-  .card-1 {
-    border-top-left-radius: 60px 100%; /* no slash on individual radius properties, mix-and-match with pixel and percent measures */
-    border-top-right-radius: 10% 40%; /* border will sometimes reflow to fit curve*/
-    border-bottom-left-radius: 186px 100px; /* radius measurements larger than the shape itself can be declared */
-    border-bottom-right-radius: 60px 100%; /* you can mix and match with regular radius statements */
+  /* .card-1 {
+    border-top-left-radius: 60px 100%;
+    border-top-right-radius: 10% 40%; 
+    border-bottom-left-radius: 186px 100px; 
+    border-bottom-right-radius: 60px 100%; 
   }
 
   .card-2 {
-    border-top-left-radius: 186px 100px; /* no slash on individual radius properties, mix-and-match with pixel and percent measures */
-  border-top-right-radius: 60px 100%; /* border will sometimes reflow to fit curve*/
-  border-bottom-left-radius:  60px 100%; /* radius measurements larger than the shape itself can be declared */
-  border-bottom-right-radius:  10% 40%; /* you can mix and match with regular radius statements */
-  }
+    border-top-left-radius: 186px 100px; 
+  border-top-right-radius: 60px 100%;
+  border-bottom-left-radius:  60px 100%; 
+  border-bottom-right-radius:  10% 40%; 
+  } */
   
   .card:hover {
     opacity: 1;
@@ -200,11 +240,14 @@ body,html {
 
   .card-para {
     padding: 10px;
+    padding-left: 30px;
   }
 
 .card-header {
-    padding-bottom: 20px;
-    margin-bottom: 10px;
+    color: var(--color-2);
+    font-size: 36px;
+    padding-left: 30px;
+    margin-bottom: 20px;
 }
 
 /* My Projects */
@@ -266,12 +309,71 @@ justify-content: space-between;  }
         margin-top: 20px;
     }
 
-    .project-heading {
-        color: var(--secondary-color);
-        font-size: 36px;
-        text-align: center;
+    .platform-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+    @media (max-width:800px) {
+
+        /* Utilities */
+           .small-version {
+               display: block;
+           }
+           .small-version.button {
+               display: block;
+           }
+       
+           
+           .large-version {
+               display: none;
+           }
+           .sub-h1 {
+               font-size: 40px;
+               margin-bottom: 0;
+           }
+           .paragraph {
+               font-size: 12px;
+               padding: 10px;
+           }
+           .button {
+               font-size: 12px;
+           }
+           .contact-icon {
+               font-size: 16px;
+               padding-left: 10px;
+               padding-right: 10px;
+       
+           }
+
+    .card-header {
+        font-size: 48px;
+    }
+    
+    .card-para {
+        font-size: 14px;
+    }
+    
+    /* projects */
+    .site-video {
+        padding: 0;
     }
     
     .project-section {
-        padding-top: 75px;
+        padding-top: 20px;
+    }
+    
+    .project-heading {
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    .small-header {
+        margin-top: 0;
+    }
+    
+    .larger-video {
+        margin: 10px;
+    }
     }
