@@ -28,6 +28,12 @@
     align-items: flex-start;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
 .side {
     position: sticky;
     top: 0;
@@ -36,7 +42,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    z-index: 100;
+    /* z-index: 100; */
     padding-top: 50px;
 }
 
@@ -47,8 +53,7 @@
 }
 
 .right {
-    width: 10%; 
-    background-color: var(--color-2);
+    width: 20%; 
     right: 0;
     border-left: solid white;
 }
@@ -72,10 +77,27 @@
     border-radius: 5px;
 }
 
+/* buttons */
+
+
+.button {
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    margin: 1em 0.8em;
+    display: block;
+    margin: 0 auto;
+  }
+
 
 body,html {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--color-1);
+    
 }
 
 .wrapper {
@@ -85,8 +107,9 @@ body,html {
 
 .headings {
     flex: 1;
-    padding-left: 300px; /* Adjust the padding as needed */
-    padding-top: 300px; /* Adjust the padding as needed */
+    padding-left: 150px; 
+    padding-top: 300px; 
+    padding-bottom: 100px;
 }
 
 .main-header {
@@ -105,6 +128,8 @@ body,html {
     margin-bottom: 10px;
     font-weight: normal;
 }
+
+/* left sidebar */
 
 .contact-icon {
     font-size: 18px;
@@ -129,4 +154,124 @@ body,html {
 }
 
 
+/* cards */
 
+
+.card-container {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    /* flex: 1; */
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+
+    
+  }
+
+  .card-1 {
+    border-top-left-radius: 60px 100%; /* no slash on individual radius properties, mix-and-match with pixel and percent measures */
+    border-top-right-radius: 10% 40%; /* border will sometimes reflow to fit curve*/
+    border-bottom-left-radius: 186px 100px; /* radius measurements larger than the shape itself can be declared */
+    border-bottom-right-radius: 60px 100%; /* you can mix and match with regular radius statements */
+  }
+
+  .card-2 {
+    border-top-left-radius: 186px 100px; /* no slash on individual radius properties, mix-and-match with pixel and percent measures */
+  border-top-right-radius: 60px 100%; /* border will sometimes reflow to fit curve*/
+  border-bottom-left-radius:  60px 100%; /* radius measurements larger than the shape itself can be declared */
+  border-bottom-right-radius:  10% 40%; /* you can mix and match with regular radius statements */
+  }
+  
+  .card:hover {
+    opacity: 1;
+  }
+
+  .card-content {
+    color: var(--dark-color);
+  }
+
+  .card-para {
+    padding: 10px;
+  }
+
+.card-header {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+/* My Projects */
+
+.small-header {
+    margin-bottom: 0;
+}
+
+  .tool-logo {
+    max-width: 60%;
+  }
+
+  .tool-container {
+justify-content: space-between;  }
+
+  .collapsibleContent.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .dark-button {
+    color: var(--secondary-color);
+    font-weight: bold;
+   
+  }
+
+  .dark-button:after, .dark-button:before {
+    content: "";
+    background-color: var(--secondary-color);
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease;
+    transform: scale(0.85);
+    display: block;
+    margin: 0 auto;
+  }
+
+    .dark-button:hover:before {
+      top: 0;
+      transform: scale(1);
+    }
+    .dark-button:hover:after {
+      transform: scale(1);
+    }
+
+    .collapsible {
+        width: 100%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+    .site-button {
+        margin-top: 20px;
+    }
+
+    .project-heading {
+        color: var(--secondary-color);
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .project-section {
+        padding-top: 75px;
+    }
