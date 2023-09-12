@@ -1,6 +1,6 @@
 :root {
-    --color-1:#566c2f;
-    --color-2:#0A648B;
+    --color-1:#132019;
+    --color-2:#0E86BA;
     --color-3: #C15213;
     --color-4: #FC6F1B;
 
@@ -21,6 +21,10 @@
 
 .fade {
     opacity: 70%;
+}
+
+.center {
+    text-align: center;
 }
 
 .flex-col {
@@ -48,7 +52,7 @@
 }
 
 .left {
-    width: 50px; 
+    width: 100px; 
     background-color: var(--color-1);
     left: 0;
 }
@@ -68,6 +72,7 @@
 .nav-link {
     text-decoration: none;
     color: white;
+    opacity: 70%;
     font-size: 18px;
     margin: 10px 0;
     padding: 10px 10px;
@@ -75,6 +80,8 @@
 }
 
 .nav-link:hover {
+    color: white;
+    opacity: 100%;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
@@ -126,7 +133,7 @@
 
 
 body,html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     background-color: var(--color-1);
     
 }
@@ -235,19 +242,26 @@ body,html {
   }
 
   .card-content {
-    color: var(--dark-color);
+    padding: 20px;
   }
 
   .card-para {
-    padding: 10px;
-    padding-left: 30px;
+    font-size: 18px;
+    padding-bottom: 10px;
   }
 
 .card-header {
     color: var(--color-2);
     font-size: 36px;
-    padding-left: 30px;
     margin-bottom: 20px;
+}
+
+.card-image {
+    /* display: flex; */
+    max-width: 60%;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
 }
 
 /* My Projects */
@@ -309,9 +323,27 @@ justify-content: space-between;  }
         margin-top: 20px;
     }
 
-    .platform-link {
+    .link {
         text-decoration: none;
         color: inherit;
+    }
+
+
+
+
+
+
+    .small-version {
+        display: none;
+      }
+    
+      .small-version.button {
+        display: none;
+      }
+
+      .challenges {
+        display: none;
+        overflow: hidden;
     }
 
 
