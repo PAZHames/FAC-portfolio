@@ -27,10 +27,15 @@
     text-align: center;
 }
 
+.paragraph {
+    color: var(--color-1);
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 1;
 }
 
 .flex-row {
@@ -103,14 +108,14 @@
   }
 
   .dark-button {
-    color: var(--secondary-color);
+    color: var(--color-1);
     font-weight: bold;
    
   }
 
   .dark-button:after, .dark-button:before {
     content: "";
-    background-color: var(--secondary-color);
+    background-color: var(--color-1);
     display: block;
     position: absolute;
     top: 100%;
@@ -138,9 +143,6 @@ body,html {
     
 }
 
-.colored-hr {
-    color: orange;
-}
 
 .wrapper {
     display: flex;
@@ -252,7 +254,8 @@ body,html {
 
 .card-header {
     color: var(--color-2);
-    font-size: 36px;
+    text-align: center;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
@@ -264,18 +267,23 @@ body,html {
     margin: 0 auto;
 }
 
+.card-hover:hover {
+    border: none;
+}
+
 /* My Projects */
 
-.small-header {
-    margin-bottom: 0;
+
+.project-section-header {
+    font-size: 40px;
+    padding-left: 60px;
+    padding-top: 20px;
 }
+
 
   .tool-logo {
     max-width: 60%;
   }
-
-  .tool-container {
-justify-content: space-between;  }
 
   .collapsibleContent.flex-row {
     display: flex;
@@ -326,6 +334,11 @@ justify-content: space-between;  }
     .link {
         text-decoration: none;
         color: inherit;
+    }
+
+    .link:hover {
+        font-weight: bold;
+        transition: 250ms all ease-in-out;
     }
 
 
@@ -401,9 +414,7 @@ justify-content: space-between;  }
         margin: 0;
     }
     
-    .small-header {
-        margin-top: 0;
-    }
+   
     
     .larger-video {
         margin: 10px;
