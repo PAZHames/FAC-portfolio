@@ -19,23 +19,24 @@
             <a href="https://www.linkedin.com/in/phoebe-hames/" class="contact-link light" target="_blank" alt="Linkedin"><i class="ph ph-linkedin-logo contact-icon"></i></a>
             <a href="https://twitter.com/phoebe_hames" class="contact-link light" target="_blank" alt="Twitter"><i class="ph ph-twitter-logo contact-icon"></i></a> 
         </div>
-    <div class="main">
+    <div class="main stack-xl">
 
 <!-- headings -->
 
-        <div class="headings" id="home">
-            <h3 class="light greeting">Hello 👋 my name is</h3>
-            <h1 class="light main-header">Phoebe Hames</h1>
-            <h2 class="light role-header fade">Software Engineer ✨🐞🔨</h2>
-        </div>
+<div class="headings" id="home">
+    <h3 class="light greeting">Hello 👋 my name is</h3>
+    <h1 class="light main-header">Phoebe Hames</h1>
+    <h2 class="light role-header fade">Software Engineer ✨🐞🔨</h2>
+</div>
 
 
 <!-- about -->
 <div id="about"></div>
+<h2 class="light project-section-header center">About Me</h2>
+
         <div class="card-container">
             <div class="card box-shadow">
                 <div class="card-content">
-              <div class="card-header">About Me</div>
                     <div class="card-para">
                         Hi! I’m Phoebe, a Software Engineer, Educator and Classicist. I make personal, unique and joyful products for the web.
 
@@ -65,13 +66,13 @@
 
 <!-- Portfolios -->
 <div id="projects"></div>
-<h2 class="light project-section-header">Professional Portfolios</h2>
+<h2 class="light project-section-header center">Professional Portfolios</h2>
 
 <div class="flex-row">
 
     <!-- counselling site -->
     <div class="flex-col">
-        <div class="card">
+        <div class="card hover-card">
             <div class="card-content">
                 <div class="card-header">Counselling Website</div>
                 <div class="site-video" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/837972699?h=ac30e702c4&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -100,112 +101,56 @@
             </div>
         </div>
     </div>
+    <!-- Acting site -->
     <div class="flex-col">
-        <div class="card">
+        <div class="card hover-card">
             <div class="card-content">
                 <div class="card-header">Acting Website</div>
                 <div class="site-video" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/845228069?h=2a5d5bd85f&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> 
                 <button class="button dark-button"><a class="link" href="https://inspiring-naiad-26e2b7.netlify.app/" target="_blank" alt="Acting Website">Visit Site</a></button>
-                <div class="paragraph">Responsive professional website built for a multi-discipinary actor and presenter. Works on desktops, tablets and phones. Features built-in access to Vimeo reels and responsive image galleries.</div>
+                <div class="paragraph">Responsive professional website built for a multi-discipinary actor and presenter. Features built-in access to Vimeo reels and responsive image galleries.</div>
+                <h4 class="paragraph">Tools</h4>
+                <div class="flex-row">
+                    <div class="flex-col"><img src="src/images/tech-logos/html.png" alt="HTML" class="tool-logo"><div class="flex-row"><small class="center">HTML</small></div></div>
+                    <div class="flex-col"><img src="src/images/tech-logos/css.png" alt="CSS" class="tool-logo"><div class="flex-row"><small class="center">CSS</small></div></div>
+                    <div class="flex-col"><img src="src/images/tech-logos/editor.png" alt="Visual Studio Code" class="tool-logo"><div class="flex-row"><small class="center">VS Code</small></div></div>
+                    <div class="flex-col"><img src="src/images/tech-logos/github.png" alt="Github" class="tool-logo"><div class="flex-row"><small class="center">Github</small></div></div>
+                    <div class="flex-col"><img src="src/images/tech-logos/flexbox.png" alt="Flexbox" class="tool-logo"><div class="flex-row"><small class="center">Flexbox</small></div></div>
+                    <div class="flex-col"><img src="src/images/tech-logos/bootstrap.png" alt="Bootstrap" class="tool-logo"><div class="flex-row"><small class="center">Bootstrap</small></div></div>
+                </div>
+                <h4 class="collapsible paragraph">Challenges + Solutions ▾</h4>
+                    <div class="collapsibleContent paragraph">
+                        <br>
+                        <div class="challenge-content"><strong> Index was very much not responsive  
+                            </strong>
+                        </div>
+                        <div class="challenge-content"><em> Used media queries and made large index ~ display: none ~, then built small index separately
+                            </em>
+                        </div>
+                        <br>
+                        <div class="challenge-content"><strong> Transitions 
+                            </strong>
+                        </div>
+                        <div class="challenge-content"><em> Still working on this! Implementing smoother page-page transitions
+                            </em>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Games & Apps -->
+
+<h2 class="light project-section-header center">Games & Apps</h2>
 
 
 <div class="card box-shadow">
-    <div class="card-content">
-
-<!-- counselling site -->
-    <!-- video -->
-    <div class="project-section">
-        
-            
-        
-         <!-- Challenges -->
-          <h4 class="collapsible paragraph  small-header">Challenges + Solutions ▾</h4>
-          <div class="collapsibleContent paragraph">
-            <br>
-        <div class="challenge-content"><strong> Client was not clear on what she wanted
-            </strong>
-        </div>
-        <div class="challenge-content"><em> Process of elimination - starting small, what she wanted the feel/user experience to be/not be, which colors she didn’t like or warm to, then built from there 
-            </em>
-        </div>
-        <br>
-        <div class="challenge-content"><strong> SEO and integration with Google Business
-            </strong>
-        </div>
-        <div class="challenge-content"><em> She is a sole trader, so reach and searchability is key - used SiteChecker to optimise SEO. Working to further integrate with Google Business.
-            </em>
-        </div>
-          </div>
-          
-        </div>
-
-    <!-- acting site -->
-<div class="flex-row project-section">
-    <div class="flex-col">
-        <div class="project-heading">Acting Website</div>
-        <div class="site-video small-version larger-video" style="padding:56.25% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/845228069?h=2a5d5bd85f&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>      
-        <button class="button dark-button small-version"><a class="link" href="https://inspiring-naiad-26e2b7.netlify.app/" target="_blank" alt="Acting Website">Visit Site</a></button>
-        <div class="paragraph">A responsive professional website built for a multi-discipinary actor and presenter. Works on desktops, tablets and phones. Features built-in access to Vimeo reels and responsive image galleries.
-        </div>
-    <!-- Tools -->
-        <h4 class="paragraph left small-header large-version">Tools</h4>
     
-      <div class="flex-row large-version">
-        <div class="flex-col"><img src="src/images/tech-logos/html.png" alt="HTML" class="tool-logo"><div class="flex-row"><small class="center">HTML</small></div></div>
-        <div class="flex-col"><img src="src/images/tech-logos/css.png" alt="CSS" class="tool-logo"><div class="flex-row"><small class="center">CSS</small></div></div>
-        <div class="flex-col"><img src="src/images/tech-logos/editor.png" alt="Visual Studio Code" class="tool-logo"><div class="flex-row"><small class="center">VS Code</small></div></div>
-        <div class="flex-col"><img src="src/images/tech-logos/github.png" alt="Github" class="tool-logo"><div class="flex-row"><small class="center">Github</small></div></div>
-        <div class="flex-col"><img src="src/images/tech-logos/flexbox.png" alt="Flexbox" class="tool-logo"><div class="flex-row"><small class="center">Flexbox</small></div></div>
-        <div class="flex-col"><img src="src/images/tech-logos/bootstrap.png" alt="Bootstrap" class="tool-logo"><div class="flex-row"><small class="center">Bootstrap</small></div></div>
-
-    </div>
-    <!-- Challenges -->
-      <h4 class="collapsible paragraph left small-header">Challenges + Solutions ▾</h4>
-      <div class="collapsibleContent paragraph">
-        <br>
-        <div class="challenge-content"><strong> Index was very much not responsive  
-            </strong>
-        </div>
-        <div class="challenge-content"><em> Used media queries and made large index ~ display: none ~, then built small index separately
-            </em>
-        </div>
-        <br>
-        <div class="challenge-content"><strong> Transitions 
-            </strong>
-        </div>
-        <div class="challenge-content"><em> Still working on this! Implementing smoother page-page transitions
-            </em>
-        </div>
-      </div>
-      
-    </div>
-    <!-- video -->
-    <div class="flex-col large-version">
-        <div class="site-video" style="padding:56.25% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/845228069?h=2a5d5bd85f&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>      
-        <button class="button dark-button site-button"><a class="link" href="https://inspiring-naiad-26e2b7.netlify.app/" target="_blank" alt="Acting Website">Visit Site</a></button>
-    </div>
-</div>
-
-
-</div>
 
 <!-- Games -->
 
 <div class="card">
-    <div class="card-header">Games</div>
     <div class="flex-col">
         <h4 class="card-header">Canine Your-Space-Invaders</h4>
         <div class="site-video small-version larger-video" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/845645777?h=272cfcb5d8&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>        

@@ -11,6 +11,21 @@
 
 /* Utility Classes */
 
+/* Stack */
+
+.stack-sm > * + * {
+    margin-top: 0.5rem;
+}
+.stack-md > * + * {
+margin-top: 1rem;
+}
+.stack-lg > * + * {
+margin-top: 2rem;
+}
+.stack-xl > * + * {
+margin-top: 4rem;
+}
+
 .light {
     color: white;
 }
@@ -63,7 +78,7 @@
 }
 
 .right {
-    width: 20%; 
+    width: 30%; 
     right: 0;
     border-left: solid orange;
 }
@@ -214,15 +229,13 @@ body,html {
   .card {
     background-color: #ffffff;
     padding: 20px;
-    opacity: 0.5;
     transition: opacity 0.3s ease;
-    /* flex: 1; */
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
     border-radius: 20px;
-    
+     
   }
 
   /* .card-1 {
@@ -239,7 +252,11 @@ body,html {
   border-bottom-right-radius:  10% 40%; 
   } */
   
-  .card:hover {
+.hover-card {
+    opacity: 0.5;
+}
+
+  .hover-card:hover {
     opacity: 1;
   }
 
@@ -254,6 +271,7 @@ body,html {
 
 .card-header {
     color: var(--color-2);
+    font-weight: bold;
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
