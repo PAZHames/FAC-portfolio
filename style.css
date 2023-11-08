@@ -9,12 +9,21 @@
 
 }
 
+section {
+    height: 100vh;
+    /* color: (--light); */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* text-align: center; */
+    /* background-color: pink; */
+}
+
 /* Utility Classes */
 
 /* Stack */
 
 .stack-sm > * + * {
-    margin-top: 0.5rem;
+margin-top: 0.5rem;
 }
 .stack-md > * + * {
 margin-top: 1rem;

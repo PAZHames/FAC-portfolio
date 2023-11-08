@@ -1,15 +1,31 @@
 window.addEventListener('scroll', function() {
     const leftSidebar = document.querySelector('.left');
     const rightSidebar = document.querySelector('.right');
-    const content = document.querySelector('.content'); // Add this line
+    const content = document.querySelector('.content'); 
     const wrapper = document.querySelector('.wrapper');
 
-    const contentHeight = content.offsetHeight; // Add this line
-    const sidebarHeight = contentHeight; // Use contentHeight instead of windowHeight
+    const contentHeight = content.offsetHeight; 
+    const sidebarHeight = contentHeight; 
 
     leftSidebar.style.height = sidebarHeight + 'px';
     rightSidebar.style.height = sidebarHeight + 'px';
 });
+
+// Page scrolls smoothly when nav links are clicked
+function scrollSmoothly() {
+    const navLinks = document.querySelectorAll('nav a');
+  
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetSection = document.querySelector(link.getAttribute('href'));
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    };
+
+    scrollSmoothly();
+
 
 // collapsible
 
