@@ -1,15 +1,15 @@
-window.addEventListener('scroll', function() {
-    const leftSidebar = document.querySelector('.left');
-    const rightSidebar = document.querySelector('.right');
-    const content = document.querySelector('.content'); 
-    const wrapper = document.querySelector('.wrapper');
+// window.addEventListener('scroll', function() {
+//     const leftSidebar = document.querySelector('.left');
+//     const rightSidebar = document.querySelector('.right');
+//     const content = document.querySelector('main'); 
+//     const wrapper = document.querySelector('.wrapper');
 
-    const contentHeight = content.offsetHeight; 
-    const sidebarHeight = contentHeight; 
+//     const contentHeight = content.offsetHeight; 
+//     const sidebarHeight = contentHeight; 
 
-    leftSidebar.style.height = sidebarHeight + 'px';
-    rightSidebar.style.height = sidebarHeight + 'px';
-});
+//     leftSidebar.style.height = sidebarHeight + 'px';
+//     rightSidebar.style.height = sidebarHeight + 'px';
+// });
 
 // Page scrolls smoothly when nav links are clicked
 function scrollSmoothly() {
@@ -56,3 +56,23 @@ coll[i].addEventListener("click", function() {
     }
 });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    let currentSectionIndex = 0;
+    const sections = document.querySelectorAll("section");
+
+    function scrollToNextSection() {
+      if (currentSectionIndex < sections.length - 1) {
+        currentSectionIndex++;
+        sections[currentSectionIndex].scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    // Listen for scroll events
+    window.addEventListener("wheel", function(event) {
+      // Check if the user is scrolling down
+      if (event.deltaY > 0) {
+        scrollToNextSection();
+      }
+    });
+  });
