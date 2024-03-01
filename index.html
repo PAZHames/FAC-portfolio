@@ -49,6 +49,12 @@
       </div>
      
         <main class="stack-xl">
+          <nav class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About Me</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#platforms" class="nav-link">Platforms</a>
+          </nav>
         <!-- headings -->
 
         <div class="headings" id="home">
@@ -62,11 +68,20 @@
         <section class="stack-lg full-width-section">
           <h2 class="light section-header center">About Me</h2>
 
-          <div class="card-container">
-            <div class="card box-shadow center-card">
-                <div class="card-content">About Me Video Box</div>
-              </div>
-            <div class="card box-shadow center-card">
+            <div class="card-container">
+                <div class="card box-shadow center-card">
+                    <div class="card-content">
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe src="https://player.vimeo.com/video/883998634?h=e4bc057dc9&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js">
+                        </script>
+                </div>
+                </div>
+            </div>  
+        </section> 
+            <!-- <div class="card box-shadow center-card">
               <div class="card-content">
                 <div class="card-para">
                   Hi! I’m Phoebe, a Software Engineer, Educator and Classicist.
@@ -82,8 +97,7 @@
                   Currently, I am completing the Software Engineer Foundation
                   with Founders and Coders, having recently qualified as a
                   Front-End Developer with SheCodes and come second in my first
-                  Hackathon (Athena 2023). I produce professional portfolios,
-                  games and apps.
+                  Hackathon (Athena 2023). 
                 </div>
 
                 <div class="card-para">
@@ -93,17 +107,15 @@
                   adept at identifying and addressing the root of problems
                   through active listening, asking pertinent questions, and
                   applying my problem-solving skills.
-                </div>
-                <div class="card-para">
+                </div> 
+                 <div class="card-para">
                   I live in London with my fiancé Dan, our ginger cockapoo Peggy
                   and an uncurated library of books which takes up more living
                   space than we do.
                 </div>
-              </div>
-            </div>
-            
-          </div>
-        </section>
+             </div> 
+        </div> -->
+        
 
         <!-- My Projects -->
 
@@ -144,6 +156,13 @@
                     ></iframe>
                   </div>
                   <script src="https://player.vimeo.com/api/player.js"></script>
+                  <div class="centre-container">
+                    <a href="https://github.com/PAZHames/penney-h-website-2.git" class="link"></a>
+                      <button class="repo-button card-header">
+                        Repo
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -225,6 +244,13 @@
                     ></iframe>
                   </div>
                   <script src="https://player.vimeo.com/api/player.js"></script>
+                  <div class="centre-container">
+                    <a href="https://github.com/PAZHames/canine-space-invaders.git" class="link"></a>
+                      <button class="repo-button card-header">
+                        Repo
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -281,6 +307,13 @@
                     ></iframe>
                   </div>
                   <script src="https://player.vimeo.com/api/player.js"></script>
+                  <div class="centre-container">
+                    <a href="https://github.com/PAZHames/weather-app-2.0.git" class="link"></a>
+                      <button class="repo-button card-header">
+                        Repo
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -298,28 +331,22 @@
 
           <div class="card center-card platform-card box-shadow">
             <div class="card-header platform-card-header center">
-              <a href="https://leetcode.com/PAZHames/" class="link">Leetcode</a>
+              <a href="https://leetcode.com/PAZHames/" class="link" target="_blank">Leetcode</a>
             </div>
           </div>
           <div class="card center-card platform-card box-shadow">
             <div class="card-header platform-card-header center">
-              <a href="https://www.codewars.com/users/PAZHames" class="link"
+              <a href="https://www.codewars.com/users/PAZHames" class="link" target="_blank"
                 >Codewars</a
               >
             </div>
           </div>
           <div class="card center-card platform-card box-shadow">
-            <div class="card-header platform-card-header center"><a href="#" class="link"> Execute Program </a></div>
+            <div class="card-header platform-card-header center">
+              <a href="#" class="link" target="_blank"> Execute Program </a></div>
           </div>
         </section>
-    </main>
-        <!-- right sidebar -->
-      <nav class="nav-links side right">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About Me</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#platforms" class="nav-link">Platforms</a>
-      </nav>
+    </main>     
     <script src="index.js"></script>
   </body>
 </html>
