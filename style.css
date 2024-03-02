@@ -196,9 +196,6 @@ margin-top: 4rem;
       border: solid 2px var(--color-4);
       border-radius: 5px;
       padding: 5px 20px;
-      /* margin-left: auto;
-      margin-right: auto; */
-      max-width: 40%;
      }
 
     .repo-button:hover {
